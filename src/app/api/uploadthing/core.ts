@@ -14,7 +14,7 @@ export const ourFileRouter = {
   .middleware(() => handleHAuth())
   .onUploadComplete(() => {}),
 
-  messageFile: f(["image", "pdf", "image/svg+xml"])
+  messageFile: f(["image", "pdf", "image/svg+xml", "image/png"])
   .middleware(() => handleHAuth())
   .onUploadComplete(() => {})
     
