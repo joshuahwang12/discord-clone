@@ -3,13 +3,13 @@ import { Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { NavigationSidebar } from '@/components/navigation/navigation-sidebar';
-import { ServerSidebar } from './server/server-sidebar';
+import { ServerSidebar } from '@/components/server/server-sidebar';
 
 export const MobileToggle = ({ serverId }: { serverId: string }) => {
   return (
     <Sheet>
-      <SheetTrigger>
-        <Button>
+      <SheetTrigger asChild>
+        <Button variant="ghost" size="icon" className="md:hidden">
           <Menu />
         </Button>
       </SheetTrigger>
